@@ -6,6 +6,8 @@ $web = $_POST['web'];
 $role = $_POST['role'];
 $sign = $_POST['sign'];
 $aaa=1;
+$aaa1=12;
+
 
 echo 'email: '.$email.'<br>';
 echo 'password: '.$password.'<br>';
