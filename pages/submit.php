@@ -5,7 +5,7 @@ $city = $_POST['city'];
 $web = $_POST['web'];
 $role = $_POST['role'];
 $sign = $_POST['sign'];
-
+$aaa=1;
 
 echo 'email: '.$email.'<br>';
 echo 'password: '.$password.'<br>';
