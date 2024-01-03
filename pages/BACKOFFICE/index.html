@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backoffice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        @media screen and (max-width: 800px) {
+            .txt-search {
+                width: 100% !important;
+            }
+            .table-master{
+                min-width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="w-100 p-3 shadow mb-5">
+        <div class="container d-flex justify-content-between">
+            <h2 class="mb-0">Graphic2B</h2>
+            <div>
+                <div class="btn btn-outline-primary">Sign up</div>
+                <div class="btn btn-primary">Sign in</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-3" >
+            <div class="list-group mb-3">
+                <a href="#" class="list-group-item list-group-item-action " aria-current="true">Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action active">Product</a>
+                <a href="#" class="list-group-item list-group-item-action">Bill</a>
+                <a href="#" class="list-group-item list-group-item-action">Custome</a>
+                <a href="#" class="list-group-item list-group-item-action">Chat</a>
+                <a href="#" class="list-group-item list-group-item-action">Logout</a>
+              </div>
+        </div>
+        <div class="col-12 col-sm-9">
+            <div class="d-flex justify-content-between">
+                <h2>Product</h2>
+                <div class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mb_addproduct">Add product</div>
+            </div>
+            <input type="text" class="txt-search mt-3 mb-3 w-25 form-control" placeholder="Search....">
+            <div class="card" style="overflow: scroll;">
+                <table class=" table-master table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product name</th>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th></td>
+                            <img class="rounded"style="width: 70px; height: 35px; object-fit: cover;" 
+                                src="https://helios-i.mashable.com/imagery/reviews/03y8gbj1mqCuexgXxFJ5vyX/hero-image.fill.size_1248x702.v1623391330.jpg">
+                        <th>MacBook M1</td>
+                        <th>A000014912</td>
+                        <th>25,000 THB</td>
+                        <th class="text-danger">10</td>
+                        <th>
+                            <span class="btn-sm btn-success">Active</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th></td>
+                            <img class="rounded"style="width: 70px; height: 35px; object-fit: cover;" 
+                                src="https://www.it24hrs.com/wp-content/uploads/2023/10/IMG_4602.jpg">
+                        <th>Airpod </td>
+                        <th>A000014942</td>
+                        <th>3,000 THB</td>
+                        <th>82</td>
+                        <th>
+                            <span class="btn-sm btn-danger">Inactive</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+           
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="mb_addproduct"tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add product</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <div class="modal-body">
+                 <div class="mb-3">
+                <span>Product name</span>
+                <input type="text" class="form-control" placeholder="Insert name">
+             </div>
+             <div class="mb-3">
+                <span>SKU</span>
+                <input type="text" class="form-control" placeholder="Insert sku">
+             </div>
+             <div class="mb-3">
+                <span>Price</span>
+                <input type="number" class="form-control" placeholder="Insert price">
+             </div>
+             <div class="mb-3">
+                <span>Stock</span>
+                <input type="number" class="form-control" placeholder="Insert stock">
+             </div>
+             <div class="mb-3">
+                <label for="formFile" class="form-label">Image</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+           </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
+cdn.jsdelivr.net
+cdn.jsdelivr.net
