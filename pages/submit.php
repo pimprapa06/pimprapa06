@@ -28,6 +28,19 @@ if ($result->num_rows > 0) {
     echo"error" .$sql."<br>".$conn->error;
 }
 $conn->close();
+
+$echo 'email: '.$email.'<br>';
+$echo 'password: '.$password.'<br>';
+$echo 'city: '.$city.'<br>';
+$echo 'web: '.$web.'<br>';
+$echo 'role: '.$role.'<br>';
+$echo 'sign: '.$sign.'<br>';
+$echo 'sign1: '.$sign1.'<br>';
+$echo 'sign2: '.$sign2.'<br>';
+$echo 'sign3: '.$sign3.'<br>';
+
+
+
 ?>
 
 
@@ -41,15 +54,15 @@ $conn->close();
 
 
 
-echo 'email: '.$email.'<br>';
-echo 'password: '.$password.'<br>';
-echo 'city: '.$city.'<br>';
-echo 'web: '.$web.'<br>';
-echo 'role: '.$role.'<br>';
-echo 'sign: '.$sign.'<br>';
-echo 'sign1: '.$sign1.'<br>';
-echo 'sign2: '.$sign2.'<br>';
-echo 'sign3: '.$sign3.'<br>';
+$echo 'email: '.$email.'<br>';
+$echo 'password: '.$password.'<br>';
+$echo 'city: '.$city.'<br>';
+$echo 'web: '.$web.'<br>';
+$echo 'role: '.$role.'<br>';
+$echo 'sign: '.$sign.'<br>';
+$echo 'sign1: '.$sign1.'<br>';
+$echo 'sign2: '.$sign2.'<br>';
+$echo 'sign3: '.$sign3.'<br>';
 
 
 
